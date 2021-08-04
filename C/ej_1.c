@@ -1,11 +1,14 @@
 #include <stdio.h>
+
 const int NUMERO_NUEVO = 20;
 // 3)
+
 void modificador(int* puntero_a_int) {
     *puntero_a_int = NUMERO_NUEVO;
 }
 // 0x7ffde69559fc --> Direcciones de memoria en base 16 (hexadecimal)
 // 0x7ffefb36e9dc
+
 int main() {
     // 1)
     int numero = 10;
