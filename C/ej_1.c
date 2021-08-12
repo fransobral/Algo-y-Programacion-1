@@ -15,7 +15,7 @@ int main() {
     // 2)
     int* puntero;
     puntero = &numero;
-    // int* puntero = &numero;
+    // int* puntero = &numero; es lo mismo q lo de arriba
     printf("El valor del numero es: %d \n", numero);
     // 4)
     modificador(&numero);

@@ -11,4 +11,4 @@ int main(){
 
 	printf("%s\n", raul.nombre);
 	return 0;
-}|
+}

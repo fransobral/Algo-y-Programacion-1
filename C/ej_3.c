@@ -1,13 +1,26 @@
+//b) Pedir al usuario que ingrese 10 numeros mostrar cuál fue el mayor y el menor ingresados
 #include <stdio.h>
-void main()
+int main()
 {       
-    int i,n,sum=0;
+    int i,n,maximo,sum=0;
+    int minimo = 99999999;
+
     printf("Ingrese los 10 numeros : \n");
+
     for (i=1;i<=10;i++)
     {
-        printf("Numero-%d :",i);
+        printf("Numero%d :",i);
         scanf("%d",&n);
-        sum +=n;
+
+        if (n > maximo){
+            maximo = n;
+        }
+        if (minimo > n){
+            minimo = n;
+        }
+        
     }
-    printf("La suma de los 10 numeros es : %d\n", sum);
+    printf("El maximo es : %d, y el minimo es: %d\n", maximo,minimo);
+
+    return 0;
 }

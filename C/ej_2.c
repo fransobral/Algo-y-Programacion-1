@@ -1,18 +1,23 @@
-int main()
-{
-    int entrada = 0; // <- Variables de tipo int.
-    int suma = 0; // <- Variables de tipo int.
-    
-    printf("Ingrese un número: ");
-    scanf(" %d", &entrada);
-    
-    while ( entrada > 0 ){
-        suma += entrada;
+/*
+a) Pedir al usuario que ingrese números y mostrar su suma. Usar -1 como condición de corte.
+*/
+
+#include <stdio.h>
+
+int main(){
+    int numero = 0;
+    int suma = 0;
+
+    while (numero != -1){
+        suma += numero;
         printf("Ingrese un número: ");
-        scanf(" %d", &entrada);
+        scanf(" %d", &numero);
     }
-    
     printf("El resultado de la suma es: %d\n", suma);
     
+
+    
+
+
     return 0;
 }
